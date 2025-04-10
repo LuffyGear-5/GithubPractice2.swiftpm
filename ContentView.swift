@@ -6,7 +6,9 @@ struct ContentView: View {
     @State var answer = 0
     var body: some View {
         TextField("Enter Number", value:$number1, format: .number)
+            .textFieldStyle(.roundedBorder)
         TextField("Enter Number", value: $number2, format: .number)
+            .textFieldStyle(.roundedBorder)
         
         Button {
             answer = number1 ?? 0 + (number2 ?? 0)
